@@ -51,7 +51,7 @@ print ("\n***** TESTS *****\n")
 # short_lst = []
 # for m in movies_lst:
 #     m_sample = sample(movies_lst, 10)
-#     # print(m_sample)
+#     print(m_sample)
 # for i in m_sample:
 #     #print(i)
 #     one_mov = i

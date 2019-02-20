@@ -16,11 +16,18 @@ List of files:
 
 ## How does the project work?
 
-This application depends on the interaction between the two python files in the project.
+This application depends on the interaction between the two python files in the project folder.
 
-### Class Movie
-* In movies_tools.py we open the movies data base in movies_clean.csv
+### Class Movie.
+* In **movies_tools.py** we open the movies data base in **movies_clean.csv**
 * Then we create a class Movie with a few instance variables and a string method.
 * In the bottom of this file there are a two chunks of code that can be used for testing the class Movie.
   * The first piece of code creates one random instance of the class Movie.
   * The second piece is a little more elaborate and it is used in the Flask route. It creates ten random instances of the class Movie.
+
+### Flask application.
+* In **SI507_project2.py** we import **movies_tools.py** so we can use any object and variables created there.
+* The first route displays a simple line of text (*in <h1> html format*) that tells us the number of movie records in the data base. For this we use the format method and invoke/use the variable *lines_count* created in **movies_tools.py**
+* The second route invokes the class Movie from **movies_tools.py** and creates ten random instances of movies. It displays the ten instances as a string but with the use of **<br>** it is shown as a list in the web page.
+
+## How to run the program?
