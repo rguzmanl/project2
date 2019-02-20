@@ -27,7 +27,12 @@ This application depends on the interaction between the two python files in the 
 
 ### Flask application.
 * In **SI507_project2.py** we import **movies_tools.py** so we can use any object and variables created there.
-* The first route displays a simple line of text (*in <h1> html format*) that tells us the number of movie records in the data base. For this we use the format method and invoke/use the variable *lines_count* created in **movies_tools.py**
+* The first route displays a simple line of text (*in h1 html format*) that tells us the number of movie records in the data base. For this we use the format method and invoke/use the variable *lines_count* created in **movies_tools.py**
 * The second route invokes the class Movie from **movies_tools.py** and creates ten random instances of movies. It displays the ten instances as a string but with the use of **<br>** it is shown as a list in the web page.
 
 ## How to run the program?
+* In order to run the tests in **movies_tools.py** you just need to uncomment the lines of code at the bottom.
+* To run the Flask application go to the project folder using git bash or other terminal. Type the following command *python SI507_project2.py runserver*.
+* Copy the line *http://127.0.0.1:5000/* and paste in your browser. This will open the firs basic route.
+* Adding */movies/ratings* will run the second route which displays the ten random movies sample.
+  * http://127.0.0.1:5000/movies/ratings

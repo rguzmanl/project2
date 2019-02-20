@@ -35,9 +35,9 @@ class Movie:
 
 
 
-print('\n  *** Instance was created in the source code of the Class Movie *** \n')
-
-print ("\n***** TESTS *****\n")
+# print('\n  *** Instance was created in the source code of the Class Movie *** \n')
+#
+# print ("\n***** TESTS *****\n")
 
 ####### The code below creates one instance of class Movie
 
