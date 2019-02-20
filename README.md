@@ -1,0 +1,26 @@
+# Flask Application -- Movies Database
+
+### Description.
+
+This project uses the Flask module to run samples of items from a data base (csv file) in a web page. It contains one basic route that displays a message and the number of movies records in the database. The second route is a little bit more elaborate and it displays a sample of ten random movies pulled from the data base.
+
+## What's in the project folder?
+
+List of files:
+* movies_clean.csv
+* movies_tools.py
+* README.md
+* requirements.txt
+* SI507_project2.py
+* database_diagram.jpg
+
+## How does the project work?
+
+This application depends on the interaction between the two python files in the project.
+
+### Class Movie
+* In movies_tools.py we open the movies data base in movies_clean.csv
+* Then we create a class Movie with a few instance variables and a string method.
+* In the bottom of this file there are a two chunks of code that can be used for testing the class Movie.
+  * The first piece of code creates one random instance of the class Movie.
+  * The second piece is a little more elaborate and it is used in the Flask route. It creates ten random instances of the class Movie.
